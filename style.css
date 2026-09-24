@@ -3,8 +3,8 @@
   --ink: #1a1a1a;
   --muted: #5b5552;
   --paper: #ffffff;
-  --burgundy: #4a1320;
-  --burgundy-dark: #360d17;
+  --burgundy: #6d1f2f;
+  --burgundy-dark: #561723;
   --ochre: #b8860b;
   --ochre-soft: #f6edd5;
   --rule: #ece6e2;
@@ -130,23 +130,3 @@ a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; border-r
   .talks li { grid-template-columns: 1fr; gap: 0.25rem; }
   .videos { grid-template-columns: 1fr; }
 }
-
-/* Banner: light sheet, objective and lit bacteria */
-.banner-rods .lit { fill: var(--ochre); }
-.banner-rods .obj { fill: var(--burgundy); }
-
-/* Blog */
-.post-list { display: grid; gap: 0; }
-.post-item { padding: 1.75rem 0; border-bottom: 1px solid var(--rule); max-width: 44rem; }
-.post-item:first-child { border-top: 1px solid var(--rule); }
-.post-date { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.35rem; }
-.post-item h2 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; line-height: 1.25; margin: 0 0 0.5rem; }
-.post-item h2 a { color: var(--ink); text-decoration: none; }
-.post-item h2 a:hover { color: var(--burgundy); text-decoration: underline; }
-.post-item p { margin: 0 0 0.6rem; }
-.read { font-size: 0.95rem; }
-.post { max-width: 40rem; }
-.post h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(2rem, 4.5vw, 2.7rem); line-height: 1.15; margin: 0 0 1.75rem; }
-.post-body { font-family: var(--serif); font-size: 1.2rem; line-height: 1.7; }
-.post-body p { margin: 0 0 1.2em; }
-.back { margin-top: 2.5rem; font-size: 0.95rem; }
