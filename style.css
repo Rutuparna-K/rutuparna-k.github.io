@@ -177,3 +177,31 @@ a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; border-r
   .book-row:nth-child(even) img { order: 0; }
   .book-row:nth-child(even) .book-text { text-align: left; }
 }
+
+/* ---- Side panel: full profile only on Home, CV and Contact ---- */
+body:not(.has-profile) .profile { margin-top: 0; }
+body:not(.has-profile) .profile-inner > * { display: none; }
+body:not(.has-profile) .profile-inner {
+  display: block;
+  min-height: 300px;
+  background-image: var(--motif);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.motif-microscope  { --motif: url("images/motif-microscope.svg"); }
+body.motif-blogpost    { --motif: url("images/motif-blogpost.svg"); }
+body.motif-teaching    { --motif: url("images/motif-teaching.svg"); }
+body.motif-publication { --motif: url("images/motif-publication.svg"); }
+body.motif-conferences { --motif: url("images/motif-conferences.svg"); }
+
+/* Pastime: no side panel at all, content runs full width */
+body.no-panel .profile { display: none; }
+body.no-panel .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+
+@media (max-width: 760px) {
+  body:not(.has-profile) .profile-inner { display: none; }
+  body:not(.has-profile) .profile { min-height: 0; }
+}

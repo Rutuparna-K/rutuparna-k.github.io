@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300" fill="none" stroke="#4a1320" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<!-- base -->
+<path d="M44 276h112a10 10 0 0 0 10-10v-5a16 16 0 0 0-16-16H50a16 16 0 0 0-16 16v5a10 10 0 0 0 10 10z"/>
+<!-- arm -->
+<path d="M140 245v-52"/>
+<path d="M140 193c0-30-14-46-36-52"/>
+<!-- focus knobs -->
+<circle cx="140" cy="214" r="15"/><circle cx="140" cy="214" r="5"/>
+<!-- stage -->
+<path d="M52 186h74"/>
+<path d="M66 186v10h48v-10"/>
+<!-- slide -->
+<path d="M62 176h44"/>
+<!-- illuminator under stage -->
+<circle cx="89" cy="222" r="11"/>
+<path d="M89 205v-6M72 213l-5-4M106 213l5-4"/>
+<!-- objective -->
+<path d="M80 158h22l-6 14h-10z"/>
+<!-- nosepiece -->
+<path d="M74 142h34a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H74a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6z"/>
+<!-- body tube -->
+<path d="M79 142V92h24v50"/>
+<!-- eyepiece, angled -->
+<g transform="rotate(-20 91 92)">
+<path d="M78 92V62a7 7 0 0 1 7-7h12a7 7 0 0 1 7 7v30"/>
+<path d="M74 55h34"/>
+</g>
+</svg>
