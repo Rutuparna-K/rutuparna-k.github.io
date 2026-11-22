@@ -158,3 +158,22 @@ a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; border-r
 /* Full, uncropped profile photo */
 .avatar { width: 230px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 14px; }
 @media (max-width: 760px) { .avatar { width: 190px; height: auto; } }
+
+/* Books on Pastime: cover and text, alternating sides */
+.books-intro { margin: 1rem 0 0.25rem; color: var(--muted); font-family: var(--serif); font-size: 1.1rem; }
+.book-row { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 1.5rem; align-items: center; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.book-row:last-child { border-bottom: 0; }
+.book-row img { width: 96px; aspect-ratio: 2 / 3; object-fit: cover; object-position: center top; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 8px 16px -10px rgba(74,19,32,0.5); }
+.book-row:nth-child(even) { grid-template-columns: minmax(0, 1fr) 96px; }
+.book-row:nth-child(even) img { order: 2; }
+.book-row:nth-child(even) .book-text { text-align: right; }
+.book-text h3 { font-family: var(--serif); font-weight: 500; font-size: 1.2rem; line-height: 1.25; margin: 0; }
+.book-text .b-author { color: var(--muted); font-size: 0.85rem; margin: 0.1rem 0 0.45rem; font-family: var(--sans); }
+.book-text p { margin: 0 0 0.35rem; font-size: 0.97rem; line-height: 1.55; }
+.book-text p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .book-row, .book-row:nth-child(even) { grid-template-columns: 76px minmax(0, 1fr); gap: 1rem; align-items: start; }
+  .book-row img { width: 76px; }
+  .book-row:nth-child(even) img { order: 0; }
+  .book-row:nth-child(even) .book-text { text-align: left; }
+}
